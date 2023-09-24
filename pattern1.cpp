@@ -17,5 +17,31 @@ int main()
         }
         cout << "\n";
     }
+
+    for (int i = 1; i <= rows; i++)
+    {
+
+        for (int j = i; j >= 1; j--)
+        {
+
+            cout << j;
+        }
+
+        cout << endl;
+    }
+
+    for (int i = 1; i <= rows; i++)
+    {
+
+        for (int j = i; j >= 1; j--)
+        {
+
+            cout << i;
+        }
+
+        cout << endl;
+    }
+
+
     return 0;
 }
