@@ -1,19 +1,22 @@
 #include <iostream>
 #include <stack>
+
 using namespace std;
 
-int main()
-{
-    // create a stack of strings
-    stack<string> languages;
+int main() {
+    stack<string> cars;
+    cars.push("BMW");
+    cars.push("Toyota");
+    cars.push("Audi");
+    cars.push("Hyundai");
+    cars.push("Honda");
+    cars.push("Range Rover");
 
-    // add element to the Stack
-    languages.push("C++");
-    languages.push("Java");
-    languages.push("Python");
+    // print all the inputs of stack
+    while(!cars.empty()) {
+        cout << cars.top() << endl;
+        cars.pop();
+    }
 
-    // print top element
-    cout << languages.top();
-
-    return 0;
+     return 1;
 }
